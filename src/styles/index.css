@@ -1,25 +1,89 @@
 body{
-    background-color: rgba(231, 235, 228, 0.715);
+    background-color: rgba(0, 0, 0, 0.715);
 }
 
 h1 {
+  margin: 2rem;
+    color: white;
     font-family: "Raleway", sans-serif;
+    font-size: 4rem;
     font-optical-sizing: auto;
     font-weight: auto;
     font-style: normal;
   }
-ul{
-    padding-left: 30rem;
-    list-style-type: none;
-  }
-
-li{
-    border: solid 1px black;
-    height:75px;
-    width: 400px;
-    box-shadow: 10px;
+.to-do-list{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
 }
- 
+button{
+  margin-bottom: 8px;
+  margin-right: 5px;
+  font-size:1.7rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  color:whitesmoke;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.add-button{
+  background-color:hsl(125, 47%, 54%);
+
+}
+.add-button:hover{
+  background-color: hsl(123, 47%, 34%);
+}
+.delete-button{
+  background-color: hsl(10, 86%, 61%);
+}
+.delete-button:hover{
+  background-color: hsl(10, 86%, 51%);
+}
+.move-button{
+  background-color: hsl(225, 53%, 58%);
+}
+.move-button:hover{
+  background-color: hsl(225, 53%, 48%);
+}
+input[type="text"]{
+  font-size: 1.6rem;
+  padding:10px;
+  border: 2px solid hsla(0, 0%, 80%, 0.5);
+  border-radius: 5px;
+  color: hsla(0, 0%, 0%, 0.5);
+}
+ol{
+  padding: 0;
+}
+li{
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 15px;
+  background-color: hsl(0, 0%, 97%);
+  margin-bottom: 10px;
+  border: 3px solid hsla(0, 0%, 85%, 0.75);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center
+  ;
+}
+.text{
+  flex: 1;
+
+}
+.delete-button, .move-button{
+  padding: 8px 12px;
+  font-size: 1.4rem;
+  margin-left: 10px;
+}
+
+
+
+
 
     /*You can write your own styles here...
     
